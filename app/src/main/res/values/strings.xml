@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DhruvBandaria_COMP304Lab1_Ex1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="on_create">onCreate Executed</string>
+    <string name="on_start">onStart Executed</string>
+    <string name="on_stop">onStop Executed</string>
+    <string name="on_destroy">onDestroy Executed</string>
+</resources>
