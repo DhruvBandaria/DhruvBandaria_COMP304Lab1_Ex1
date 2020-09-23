@@ -6,4 +6,5 @@
     <string name="on_start">onStart Executed</string>
     <string name="on_stop">onStop Executed</string>
     <string name="on_destroy">onDestroy Executed</string>
+    <string name="main_activity">Main Activity:</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.dhruvbandaria_comp304lab1_ex1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,9 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /*
  * A simple {@link Fragment} subclass.
@@ -59,16 +62,28 @@ public class FirstFragment extends Fragment {
         }
     }
 */
+    int temp=1415;
+    ListView listView;
     String[] listData=new String[]{"AIActivity","ARActivity"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        ListView listView=new ListView(getActivity());
+        listView=new ListView(getActivity());
+        listView.setId(temp);
         ArrayAdapter<String> listAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,listData);
         listView.setAdapter(listAdapter);
         TextView textView = new TextView(getActivity());
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0){
+                    //Intent newIntent=new Intent(getActivity(),)
+                }
+            }
+        });
         //textView.setText("sadas");
         return listView;
     }
+
 }
