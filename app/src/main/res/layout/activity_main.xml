@@ -9,8 +9,8 @@
     <fragment
         android:id="@+id/fragment"
         android:name="com.example.dhruvbandaria_comp304lab1_ex1.FirstFragment"
-        android:layout_width="416dp"
-        android:layout_height="387dp"
+        android:layout_width="412dp"
+        android:layout_height="348dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -20,9 +20,9 @@
     <fragment
         android:id="@+id/fragment2"
         android:name="com.example.dhruvbandaria_comp304lab1_ex1.SecondFragment"
-        android:layout_width="415dp"
-        android:layout_height="344dp"
-        android:layout_marginTop="388dp"
+        android:layout_width="409dp"
+        android:layout_height="410dp"
+        android:layout_marginTop="352dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

@@ -7,4 +7,6 @@
     <string name="on_stop">onStop Executed</string>
     <string name="on_destroy">onDestroy Executed</string>
     <string name="main_activity">Main Activity:</string>
+    <string name="ai_activity">AIActivity:</string>
+    <string name="vr_activity">VRActivity:</string>
 </resources>
