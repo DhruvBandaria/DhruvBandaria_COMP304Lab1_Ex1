@@ -3,23 +3,19 @@ package com.example.dhruvbandaria_comp304lab1_ex1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class VRActivity extends AppCompatActivity {
 
     TextView tv1,tv2,tv3,tv4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        tv1=findViewById(R.id.textView13);
-        tv2=findViewById(R.id.textView14);
-        tv3=findViewById(R.id.textView15);
-        tv4=findViewById(R.id.textView16);
+        setContentView(R.layout.activity_v_r);
+        tv1=findViewById(R.id.textView9);
+        tv2=findViewById(R.id.textView10);
+        tv3=findViewById(R.id.textView11);
+        tv4=findViewById(R.id.textView12);
         tv1.setText(R.string.on_create);
     }
 

@@ -62,15 +62,13 @@ public class FirstFragment extends Fragment {
         }
     }
 */
-    int temp=1415;
     ListView listView;
-    String[] listData=new String[]{"AIActivity","ARActivity"};
+    String[] listData=new String[]{"AIActivity","VRActivity"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         listView=new ListView(getActivity());
-        listView.setId(temp);
         ArrayAdapter<String> listAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,listData);
         listView.setAdapter(listAdapter);
         TextView textView = new TextView(getActivity());
@@ -78,12 +76,23 @@ public class FirstFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    //Intent newIntent=new Intent(getActivity(),)
+                    Intent newIntent=new Intent(getActivity(),ARActivity.class);
+                    startActivity(newIntent);
+                }
+                else if(position == 1){
+                    Intent newIntent=new Intent(getActivity(),VRActivity.class);
+                    startActivity(newIntent);
                 }
             }
         });
+        Toast.makeText(getActivity(),R.string.on_create,Toast.LENGTH_LONG).show();
         //textView.setText("sadas");
         return listView;
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        Toast.makeText(getActivity(),R.string.on_start,Toast.LENGTH_LONG).show();
+    }
 }
